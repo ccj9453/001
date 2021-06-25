@@ -13,6 +13,7 @@ function onlive() {
 /* REST OF THE CODE */
 
 fetch('https://www.youtube.com/channel/' + channelid).then(function (response) {
+	mode: "no-cors",
 	return response.text();
 }).then(function (html) {
   if (html.includes("hqdefault_live.jpg")) {
