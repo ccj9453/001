@@ -11,7 +11,7 @@ function onlive() {
 
 /* REST OF THE CODE */
 
-fetch(mode: "no-cors", 'https://www.youtube.com/channel/' + channelid).then(function (response) {
+fetch('https://www.youtube.com/channel/' + channelid).then(function (response) {
 	return response.text();
 }).then(function (html) {
   if (html.includes("hqdefault_live.jpg")) {
