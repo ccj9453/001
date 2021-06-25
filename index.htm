@@ -2,7 +2,20 @@
 　<body>
 　<script type="text/JavaScript">
 　<!--
-　document.write("歡迎光臨")
+　
+  function Test(){
+　var var1='A';
+　var2='B';
+　document.write('var1 in function='+var1+'<br>');　// 輸出 A
+　document.write('var2 in function='+var2+'<hr>');　// 輸出 B
+}
+var var3='C';
+
+Test();　// 呼叫 Test function
+
+document.write('var2 not in function='+var2+'<br>');　// 輸出 B
+document.write('var3 not in function='+var3+'<hr>');　// 輸出 C
+   
 　//-->
 　</script>
 　</body>
